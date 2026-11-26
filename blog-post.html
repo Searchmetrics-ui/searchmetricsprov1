@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Post — SearchMetricsPro AEO &amp; GEO Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'] },
+          colors: {
+            navy: { 950: '#0D0F1C', 900: '#111322', 850: '#171A2E', 800: '#1D2136', 700: '#272C47' },
+            brand: { 500: '#7C3AED', 400: '#8B5CF6', 300: '#A78BFA' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased bg-[#F8F9FC]">
+  <div id="magic-cursor"><div id="ball"></div></div>
+
+  <!-- =========================================================
+       1. PAGE HEADER BANNER (MATCHES .page-header SINGLE POST)
+  ========================================================== -->
+  <div class="p-3 sm:p-5 bg-[#F8F9FC]">
+    <header class="relative bg-navy-900 text-white rounded-3xl overflow-hidden shadow-2xl">
+      <!-- Subtle Grid + Bottom-Center Glowing Violet Orb -->
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute inset-0 opacity-[0.06]" style="background-image: linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px); background-size: 48px 48px;"></div>
+        <div class="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[540px] h-[320px] rounded-full bg-brand-500/35 blur-[110px]"></div>
+      </div>
+
+      <!-- Top Utility Bar -->
+      <div class="relative z-10 border-b border-white/10 text-xs text-slate-300">
+        <div class="max-w-6xl mx-auto px-6 py-2.5 flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-6">
+            <span class="inline-flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-brand-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              searchmetricspro@gmail.com
+            </span>
+            <span class="inline-flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-brand-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +1 (415) 890-4310
+            </span>
+          </div>
+          <div class="flex items-center gap-5 text-slate-300">
+            <span>San Francisco &bull; Global AI Search</span>
+            <span class="text-brand-300 font-medium">AEO &amp; GEO Certified</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav id="main-nav" class="relative z-20">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <a href="index.html" class="flex items-center gap-2.5 magnetic-item">
+            <span class="w-9 h-9 rounded-full bg-brand-500 flex items-center justify-center shadow-lg shadow-brand-500/40">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            </span>
+            <span class="text-xl font-bold tracking-tight">SearchMetricsPro</span>
+          </a>
+
+          <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+            <li><a href="blog.html" class="text-white font-semibold">Blog</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+          </ul>
+
+          <a href="contact.html" class="pill-cta magnetic-item">
+            <span class="btn-bg-ripple"></span>
+            <span class="btn-label">Get Started Today</span>
+            <span class="arrow-circle">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Left-Aligned Post Title + Date & Category Metadata (No Breadcrumbs, No Author) -->
+      <div class="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-20 space-y-5">
+        <h1 id="post-title" class="split-heading text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight max-w-4xl">
+          How Google AI Overviews Select Cited Sources in 2026
+        </h1>
+
+        <ul class="fade-up flex flex-wrap items-center gap-6 text-sm text-slate-200 font-medium">
+          <li class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4 text-brand-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span id="post-date">August 4, 2026</span>
+          </li>
+          <li class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4 text-brand-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+            <a id="post-category" href="blog.html" class="hover:text-brand-300 transition">AEO Strategy</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </div>
+
+  <!-- =========================================================
+       2. SINGLE-COLUMN ARTICLE CONTAINER (NO SIDEBAR)
+  ========================================================== -->
+  <main class="py-12 bg-[#F8F9FC]">
+    <div class="max-w-6xl mx-auto px-6 space-y-12">
+
+      <!-- 3. Featured 16:9 Landscape Image (Wider than Reading Column, Shiny Glass + Reveal) -->
+      <figure class="shiny-glass reveal-image rounded-3xl overflow-hidden shadow-xl aspect-video">
+        <img id="post-image" src="assets/hero.jpg" alt="Blog Featured Image" class="w-full h-full object-cover" />
+      </figure>
+
+      <!-- 4. Centered Narrower Reading Column (~1000-1100px) -->
+      <article class="max-w-4xl mx-auto space-y-8">
+        <!-- Intro Paragraphs (2) -->
+        <div class="space-y-5 text-slate-600 text-base sm:text-[17px] leading-relaxed">
+          <p id="post-intro-1" class="fade-up"></p>
+          <p id="post-intro-2" class="fade-up"></p>
+        </div>
+
+        <!-- Solid Purple Rounded Blockquote Banner -->
+        <blockquote class="fade-up bg-brand-500 text-white rounded-2xl p-7 sm:p-9 shadow-xl shadow-brand-500/20 flex flex-col sm:flex-row items-start gap-5">
+          <span class="text-white/90 shrink-0 mt-1">
+            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </span>
+          <p id="post-quote" class="text-lg sm:text-xl font-bold leading-snug"></p>
+        </blockquote>
+
+        <!-- Transition Paragraph -->
+        <p id="post-transition" class="fade-up text-slate-600 text-base sm:text-[17px] leading-relaxed"></p>
+
+        <!-- Subheading H2 + Subheading Intro + 5-Item Bulleted List + Closing -->
+        <div class="space-y-5">
+          <h2 id="post-subheading" class="split-heading text-2xl sm:text-3xl font-extrabold text-navy-900 leading-tight"></h2>
+          <p id="post-sub-intro" class="fade-up text-slate-600 text-base sm:text-[17px] leading-relaxed"></p>
+
+          <ul id="post-bullets" class="fade-up list-disc pl-6 space-y-3 text-slate-700 text-base leading-relaxed marker:text-brand-500"></ul>
+
+          <p id="post-closing" class="fade-up text-slate-600 text-base sm:text-[17px] leading-relaxed pt-2"></p>
+        </div>
+
+        <!-- 5. Post Footer: Tags (Left) + Social Share (Right) -->
+        <div class="fade-up border-t border-slate-200 pt-7 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <div class="flex flex-wrap items-center gap-2.5">
+            <span class="text-sm font-bold text-navy-900 mr-1">Tags:</span>
+            <div id="post-tags" class="flex flex-wrap items-center gap-2"></div>
+          </div>
+
+          <div class="flex items-center gap-2.5">
+            <a id="share-fb" href="#" target="_blank" rel="noopener" aria-label="Share on Facebook" class="w-9 h-9 rounded-full border border-slate-300 text-navy-900 hover:bg-brand-500 hover:border-brand-500 hover:text-white flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a id="share-wa" href="#" target="_blank" rel="noopener" aria-label="Share on WhatsApp" class="w-9 h-9 rounded-full border border-slate-300 text-navy-900 hover:bg-brand-500 hover:border-brand-500 hover:text-white flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+            <a id="share-li" href="#" target="_blank" rel="noopener" aria-label="Share on LinkedIn" class="w-9 h-9 rounded-full border border-slate-300 text-navy-900 hover:bg-brand-500 hover:border-brand-500 hover:text-white flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Leave a Reply Comment Section -->
+        <section id="comments" class="fade-up bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm space-y-6 mt-6">
+          <div class="space-y-1">
+            <h3 class="text-2xl font-extrabold text-navy-900">Leave a Reply</h3>
+            <p class="text-xs text-slate-500">Share your thoughts or questions about this AEO &amp; GEO guide.</p>
+          </div>
+          <form id="comment-form" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <input type="text" required placeholder="Your Name *" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-brand-500 transition" />
+              <input type="email" required placeholder="Email Address *" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-brand-500 transition" />
+            </div>
+            <textarea rows="4" required placeholder="Write your comment..." class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-brand-500 transition"></textarea>
+            <div class="flex items-center gap-4">
+              <button type="submit" class="pill-cta magnetic-item">
+                <span class="btn-bg-ripple"></span>
+                <span class="btn-label">Post Comment</span>
+                <span class="arrow-circle">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </button>
+              <span id="comment-msg" class="hidden text-xs font-semibold text-emerald-600">Thanks! Your comment has been submitted for review.</span>
+            </div>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- =========================================================
+       GLOBAL FOOTER
+  ========================================================== -->
+  <footer class="bg-navy-900 text-white pt-16 pb-8 overflow-hidden relative">
+    <div class="max-w-6xl mx-auto px-6 space-y-14">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="flex items-center gap-2.5">
+            <span class="w-9 h-9 rounded-full bg-brand-500 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            </span>
+            <span class="text-xl font-bold tracking-tight">SearchMetricsPro</span>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-xs">
+            The dedicated Answer Engine Optimization (AEO) &amp; Generative Engine Optimization (GEO) agency helping ambitious brands win AI search.
+          </p>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Quick Links</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+            <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Our Services</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li><a href="services.html" class="hover:text-white transition">Answer Engine Optimization</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Generative Engine Strategy</a></li>
+            <li><a href="services.html" class="hover:text-white transition">AI Citation Analytics</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Entity &amp; Schema Markup</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Digital PR Co-Citations</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Subscribe Newsletter</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Weekly AEO &amp; GEO playbooks, citation benchmarks, and LLM updates.</p>
+          <form class="flex items-center bg-navy-800 border border-white/10 rounded-xl p-1.5">
+            <input type="email" placeholder="Your email address" class="bg-transparent text-xs text-white placeholder-slate-400 px-3 py-1.5 w-full focus:outline-none" />
+            <button type="button" class="w-8 h-8 rounded-lg bg-brand-500 hover:bg-brand-400 text-white flex items-center justify-center shrink-0 transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="relative py-8 flex items-center justify-center select-none">
+        <span class="text-3xl sm:text-5xl lg:text-[5.2rem] font-extrabold tracking-tight text-white/[0.04] leading-none">SEARCHMETRICSPRO</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-24 h-24 rounded-full bg-brand-500 text-white shadow-2xl shadow-brand-500/40 flex items-center justify-center border-4 border-navy-900 relative">
+            <svg viewBox="0 0 120 120" class="w-20 h-20 rotate-badge-ring">
+              <defs><path id="footerCirclePath" d="M 60, 60 m -42, 0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0" /></defs>
+              <text fill="#FFFFFF" font-size="9.5" font-weight="700" letter-spacing="2.2">
+                <textPath href="#footerCirclePath">AEO &amp; GEO AGENCY &bull; 10+ YRS EXP &bull;</textPath>
+              </text>
+            </svg>
+            <span class="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; 2026 SearchMetricsPro AEO &amp; GEO Agency. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-white transition">LinkedIn</a>
+          <a href="#" class="hover:text-white transition">X / Twitter</a>
+          <a href="#" class="hover:text-white transition">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Populate Post Data BEFORE main.js runs GSAP SplitText -->
+  <script src="assets/blog-data.js"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get("slug") || "google-ai-overviews-2026";
+      const post = (window.BLOG_POSTS && window.BLOG_POSTS[slug]) || window.BLOG_POSTS["google-ai-overviews-2026"];
+      if (!post) return;
+
+      document.title = post.title + " — SearchMetricsPro Blog";
+      document.getElementById("post-title").textContent = post.title;
+      document.getElementById("post-date").textContent = post.date;
+      document.getElementById("post-category").textContent = post.category;
+      const imgEl = document.getElementById("post-image");
+      imgEl.src = post.image;
+      imgEl.alt = post.title;
+
+      document.getElementById("post-intro-1").textContent = post.intro1;
+      document.getElementById("post-intro-2").textContent = post.intro2;
+      document.getElementById("post-quote").textContent = post.quote;
+      document.getElementById("post-transition").textContent = post.transition;
+      document.getElementById("post-subheading").textContent = post.subheading;
+      document.getElementById("post-sub-intro").textContent = post.subIntro;
+      document.getElementById("post-closing").textContent = post.closing;
+
+      const bulletsEl = document.getElementById("post-bullets");
+      bulletsEl.innerHTML = post.bullets.map((b) => `<li>${b}</li>`).join("");
+
+      const tagsEl = document.getElementById("post-tags");
+      tagsEl.innerHTML = post.tags
+        .map((t) => `<a href="blog.html" class="bg-brand-500 hover:bg-navy-900 text-white text-xs font-semibold px-4 py-1.5 rounded-full transition">${t}</a>`)
+        .join("");
+
+      const pageUrl = encodeURIComponent(window.location.href);
+      const pageTitle = encodeURIComponent(post.title);
+      document.getElementById("share-fb").href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+      document.getElementById("share-wa").href = `https://api.whatsapp.com/send?text=${pageTitle}%20${pageUrl}`;
+      document.getElementById("share-li").href = `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+
+      const commentForm = document.getElementById("comment-form");
+      const commentMsg = document.getElementById("comment-msg");
+      if (commentForm && commentMsg) {
+        commentForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          commentMsg.classList.remove("hidden");
+          commentForm.reset();
+        });
+      }
+    })();
+  </script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
