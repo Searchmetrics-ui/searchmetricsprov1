@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — SearchMetricsPro AEO &amp; GEO Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'] },
+          colors: {
+            navy: { 950: '#0D0F1C', 900: '#111322', 850: '#171A2E', 800: '#1D2136', 700: '#272C47' },
+            brand: { 500: '#7C3AED', 400: '#8B5CF6', 300: '#A78BFA' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased">
+  <div id="magic-cursor"><div id="ball"></div></div>
+
+  <!-- =========================================================
+       HEADER + PAGE HERO BANNER (ABOUT US)
+  ========================================================== -->
+  <header class="relative bg-navy-900 text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="assets/hero.jpg" alt="About SearchMetricsPro" class="w-full h-full object-cover opacity-35" />
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0D0F1C]/90 via-[#111322]/85 to-[#111322]"></div>
+    </div>
+
+    <!-- Top Utility Bar -->
+    <div class="relative z-10 border-b border-white/10 text-xs text-slate-300">
+      <div class="max-w-6xl mx-auto px-6 py-2.5 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-6">
+          <span class="inline-flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-brand-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            searchmetricspro@gmail.com
+          </span>
+          <span class="inline-flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-brand-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +1 (415) 890-4310
+          </span>
+        </div>
+        <div class="flex items-center gap-5 text-slate-300">
+          <span>San Francisco &bull; Global AI Search</span>
+          <span class="text-brand-300 font-medium">AEO &amp; GEO Certified</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Sticky Navbar -->
+    <nav id="main-nav" class="relative z-20">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2.5 magnetic-item">
+          <span class="w-9 h-9 rounded-full bg-brand-500 flex items-center justify-center shadow-lg shadow-brand-500/40">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          </span>
+          <span class="text-xl font-bold tracking-tight">SearchMetricsPro</span>
+        </a>
+
+        <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="about.html" class="text-white font-semibold">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+          <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+        </ul>
+
+        <a href="contact.html" class="pill-cta magnetic-item">
+          <span class="btn-bg-ripple"></span>
+          <span class="btn-label">Get Started Today</span>
+          <span class="arrow-circle">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <div class="relative z-10 max-w-6xl mx-auto px-6 py-20 text-center space-y-4">
+      <h1 class="split-heading text-4xl sm:text-5xl font-extrabold tracking-tight">About Us</h1>
+      <nav aria-label="Breadcrumbs" class="fade-up flex items-center justify-center gap-2 text-xs font-medium text-slate-300">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <span class="text-brand-400">/</span>
+        <span class="text-brand-300">About Us</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       SECTION 2: ABOUT US OVERVIEW (2-COL SPLIT)
+  ========================================================== -->
+  <section class="py-20 bg-[#F8F9FC]">
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+      <!-- Left Image + Overlaid Stat/Trust Cards -->
+      <div class="lg:col-span-6 relative">
+        <div class="shiny-glass reveal-image rounded-3xl overflow-hidden shadow-xl">
+          <img src="assets/team.jpg" alt="SearchMetricsPro Team" class="w-full h-[460px] object-cover" />
+        </div>
+        <!-- Overlaid Metric Card Top-Left -->
+        <div class="fade-up absolute top-6 -left-3 sm:-left-6 bg-navy-900 text-white rounded-2xl p-4 shadow-xl border border-white/10">
+          <p class="text-2xl font-extrabold">$43.1M+</p>
+          <p class="text-[11px] text-brand-300 font-medium">Client AI Pipeline</p>
+        </div>
+        <!-- Overlaid Trust Card Bottom-Right -->
+        <div class="fade-up absolute bottom-6 -right-3 sm:-right-6 bg-white text-navy-900 rounded-2xl p-4 shadow-xl border border-slate-200/80 space-y-1">
+          <div class="flex items-center gap-1 text-brand-500 text-xs">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="font-bold text-navy-900 ml-1">4.9/5</span></div>
+          <p class="text-[11px] text-slate-500 font-medium">Trusted By 250+ AI-First Brands</p>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="lg:col-span-6 space-y-6">
+        <span class="fade-up inline-block text-xs font-bold uppercase tracking-[0.14em] text-brand-500">About Us</span>
+        <h2 class="split-heading text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight">
+          Dedicated to Growing Your AI Search Presence
+        </h2>
+        <p class="fade-up text-slate-600 text-sm sm:text-base leading-relaxed">
+          SearchMetricsPro was founded to help forward-thinking companies win visibility inside generative answer engines. We bridge technical schema, entity graphs, and authoritative content so LLMs cite your brand first.
+        </p>
+
+        <!-- 2 Animated Counters -->
+        <div class="fade-up grid grid-cols-2 gap-6 py-2">
+          <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm">
+            <p class="text-3xl font-extrabold text-navy-900"><span class="count-up" data-target="25" data-suffix="+">25+</span></p>
+            <p class="text-xs text-slate-500 mt-1">Enterprise AEO Programs</p>
+          </div>
+          <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm">
+            <p class="text-3xl font-extrabold text-brand-500"><span class="count-up" data-target="98" data-suffix="%">98%</span></p>
+            <p class="text-xs text-slate-500 mt-1">Client Satisfaction Rate</p>
+          </div>
+        </div>
+
+        <!-- 3-Item Check List -->
+        <ul class="fade-up space-y-2.5 text-xs font-semibold text-navy-900">
+          <li class="flex items-center gap-2.5"><span class="w-4 h-4 rounded-full bg-brand-500 text-white flex items-center justify-center text-[10px]">&#10003;</span> Answer Engine Content Optimization</li>
+          <li class="flex items-center gap-2.5"><span class="w-4 h-4 rounded-full bg-brand-500 text-white flex items-center justify-center text-[10px]">&#10003;</span> Technical JSON-LD &amp; Entity Architecture</li>
+          <li class="flex items-center gap-2.5"><span class="w-4 h-4 rounded-full bg-brand-500 text-white flex items-center justify-center text-[10px]">&#10003;</span> Internal Knowledge Graph Linking</li>
+        </ul>
+
+        <div class="fade-up pt-2">
+          <a href="contact.html" class="pill-cta magnetic-item">
+            <span class="btn-bg-ripple"></span>
+            <span class="btn-label">Contact Us Now</span>
+            <span class="arrow-circle">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 3: OUR APPROACH (DARK ROUNDED BENTO METRICS)
+  ========================================================== -->
+  <section class="px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto bg-navy-900 text-white rounded-3xl px-6 sm:px-12 py-16 shadow-2xl space-y-12">
+      <div class="grid md:grid-cols-12 gap-6 items-end">
+        <div class="md:col-span-7 space-y-3">
+          <span class="fade-up inline-block text-xs font-bold uppercase tracking-[0.14em] text-brand-300">Our Approach</span>
+          <h2 class="split-heading text-3xl sm:text-4xl font-extrabold leading-tight">Our Proven AI Growth Approach</h2>
+        </div>
+        <p class="fade-up md:col-span-5 text-slate-300 text-sm leading-relaxed">
+          Every engagement combines structured entity data, multi-model prompt testing, and digital PR co-citations for measurable citation velocity.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="fade-up bg-navy-800 border border-white/10 rounded-2xl p-6 space-y-3">
+          <h3 class="text-xl font-extrabold">50+ Audits Delivered</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Deep diagnostic crawls across ChatGPT, Perplexity, Claude, and Google AI Overviews.</p>
+        </div>
+        <div class="fade-up bg-navy-800 border border-white/10 rounded-2xl p-6 space-y-2" data-delay="0.1">
+          <p class="text-3xl font-extrabold text-brand-300"><span class="count-up" data-target="100" data-suffix="%">100%</span></p>
+          <h3 class="text-base font-bold">Entity-First Execution</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Zero guesswork—every page mapped to verifiable facts.</p>
+        </div>
+        <div class="fade-up bg-navy-800 border border-white/10 rounded-2xl p-6 space-y-3" data-delay="0.2">
+          <h3 class="text-xl font-extrabold">24/7 Optimization</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Continuous monitoring as LLM weights and retrieval indexes evolve.</p>
+        </div>
+        <div class="fade-up bg-gradient-to-br from-brand-500/25 to-navy-800 border border-brand-400/40 rounded-2xl p-6 flex flex-col justify-between space-y-4" data-delay="0.3">
+          <div>
+            <h3 class="text-2xl font-extrabold text-white">Free</h3>
+            <p class="text-xs text-slate-200 mt-1">Get a custom AEO &amp; GEO visibility scorecard for your brand.</p>
+          </div>
+          <a href="contact.html" class="pill-cta magnetic-item w-fit">
+            <span class="btn-bg-ripple"></span>
+            <span class="btn-label">Get Free Quote</span>
+            <span class="arrow-circle">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 4: WHO WE ARE (2-COL SPLIT)
+  ========================================================== -->
+  <section class="py-20 bg-[#F8F9FC]">
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6 space-y-6">
+        <span class="fade-up inline-block text-xs font-bold uppercase tracking-[0.14em] text-brand-500">Who We Are</span>
+        <h2 class="split-heading text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight">
+          The Creative Minds Behind AI Search Growth
+        </h2>
+        <p class="fade-up text-slate-600 text-sm sm:text-base leading-relaxed">
+          Our team unites technical SEOs, data engineers, and editorial strategists obsessed with how large language models retrieve, rank, and cite authoritative sources.
+        </p>
+
+        <div class="fade-up grid sm:grid-cols-2 gap-5">
+          <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm space-y-2">
+            <h3 class="text-sm font-bold text-navy-900">Global AI Reach</h3>
+            <p class="text-xs text-slate-500">Multi-region visibility across every major answer engine.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm space-y-2">
+            <h3 class="text-sm font-bold text-navy-900">Client-First Mindset</h3>
+            <p class="text-xs text-slate-500">Transparent dashboards tied directly to pipeline lift.</p>
+          </div>
+        </div>
+
+        <ul class="fade-up space-y-2 text-xs font-semibold text-navy-900">
+          <li class="flex items-center gap-2"><span class="text-brand-500">&#10003;</span> Proprietary Prompt Benchmarking Suite</li>
+          <li class="flex items-center gap-2"><span class="text-brand-500">&#10003;</span> Dedicated AEO &amp; GEO Pod Per Client</li>
+        </ul>
+
+        <div class="fade-up pt-1">
+          <a href="services.html" class="pill-cta magnetic-item">
+            <span class="btn-bg-ripple"></span>
+            <span class="btn-label">Get Started</span>
+            <span class="arrow-circle">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6">
+        <div class="shiny-glass reveal-image rounded-3xl overflow-hidden shadow-xl">
+          <img src="assets/analytics.jpg" alt="Who We Are" class="w-full h-[420px] object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 5: FULL-WIDTH VIDEO BANNER
+  ========================================================== -->
+  <section class="relative bg-navy-900 text-white py-24 overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="assets/hero.jpg" alt="Agency Showcase" class="w-full h-full object-cover opacity-30" />
+      <div class="absolute inset-0 bg-navy-950/75"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6">
+      <span class="fade-up inline-block text-xs font-bold uppercase tracking-[0.14em] text-brand-300">Inside SearchMetricsPro</span>
+      <h2 class="split-heading text-3xl sm:text-4xl font-extrabold leading-tight">See How We Engineer #1 AI Citations</h2>
+      <div class="fade-up pt-2">
+        <button type="button" data-open-video class="w-20 h-20 rounded-full bg-brand-500 hover:bg-brand-400 text-white shadow-2xl shadow-brand-500/50 inline-flex items-center justify-center transition transform hover:scale-110 magnetic-item" aria-label="Play video">
+          <svg class="w-7 h-7 ml-1" fill="currentColor" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 6: OUR TEAM (3-COL GRID)
+  ========================================================== -->
+  <section class="py-20 bg-[#F8F9FC]">
+    <div class="max-w-6xl mx-auto px-6 space-y-12">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="fade-up inline-block text-xs font-bold uppercase tracking-[0.14em] text-brand-500">Our Team</span>
+        <h2 class="split-heading text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight">
+          The Creative Minds Driving AI Search Success
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="fade-up bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm group">
+          <div class="shiny-glass overflow-hidden">
+            <img src="assets/team.jpg" alt="Emma Roberts" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-6 flex items-center justify-between">
+            <div>
+              <h3 class="text-base font-bold text-navy-900">Emma Roberts</h3>
+              <p class="text-xs text-slate-500">Founder &amp; AEO Director</p>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <a href="#" class="hover:text-brand-500 transition">in</a>
+              <a href="#" class="hover:text-brand-500 transition">X</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-up bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm group" data-delay="0.1">
+          <div class="shiny-glass overflow-hidden">
+            <img src="assets/client.jpg" alt="Daniel Morgan" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-6 flex items-center justify-between">
+            <div>
+              <h3 class="text-base font-bold text-navy-900">Daniel Morgan</h3>
+              <p class="text-xs text-slate-500">Head of GEO Strategy</p>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <a href="#" class="hover:text-brand-500 transition">in</a>
+              <a href="#" class="hover:text-brand-500 transition">X</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-up bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm group" data-delay="0.2">
+          <div class="shiny-glass overflow-hidden">
+            <img src="assets/analytics.jpg" alt="Sophia Bennett" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+          </div>
+          <div class="p-6 flex items-center justify-between">
+            <div>
+              <h3 class="text-base font-bold text-navy-900">Sophia Bennett</h3>
+              <p class="text-xs text-slate-500">Entity &amp; Analytics Lead</p>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <a href="#" class="hover:text-brand-500 transition">in</a>
+              <a href="#" class="hover:text-brand-500 transition">X</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 7: OUR WORK PROCESS (3-STEP DARK GLASS)
+  ========================================================== -->
+  <section class="px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto bg-navy-900 text-white rounded-3xl px-6 sm:px-12 py-16 shadow-2xl space-y-12">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="fade-up inline-block text-xs font-bold uppercase tracking-[0.14em] text-brand-300">Our Work Process</span>
+        <h2 class="split-heading text-3xl sm:text-4xl font-extrabold leading-tight">How We Turn Ideas Into AI Citations</h2>
+        <p class="fade-up text-slate-300 text-sm">A repeatable three-stage sprint built for generative search engines.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="fade-up glass-card rounded-2xl p-7 space-y-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-300">STEP 01</span>
+          <h3 class="text-xl font-bold">Research &amp; Discovery</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Audit your current citations across ChatGPT, Perplexity, Gemini, and AI Overviews against top competitors.</p>
+        </div>
+        <div class="fade-up glass-card rounded-2xl p-7 space-y-4" data-delay="0.1">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-300">STEP 02</span>
+          <h3 class="text-xl font-bold">Planning &amp; Strategy</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Architect your entity graph, structured JSON-LD schema, and citation-ready answer hubs.</p>
+        </div>
+        <div class="fade-up glass-card rounded-2xl p-7 space-y-4" data-delay="0.2">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-300">STEP 03</span>
+          <h3 class="text-xl font-bold">Execution &amp; Scaling</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Deploy content, build authoritative co-citations, and track daily share-of-voice gains.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 8: OUR IMPACT + SECTION 9: TESTIMONIALS + SECTION 10: FAQ
+  ========================================================== -->
+  <section class="py-20 bg-[#F8F9FC]">
+    <div class="max-w-6xl mx-auto px-6 space-y-20">
+      <!-- Our Impact -->
+      <div class="space-y-10">
+        <div class="grid md:grid-cols-12 gap-6 items-end">
+          <div class="md:col-span-7 space-y-3">
+            <span class="fade-up inline-block text-xs font-bold uppercase tracking-[0.14em] text-brand-500">Our Impact</span>
+            <h2 class="split-heading text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight">
+              Features Built to Boost Your AI Search Success
+            </h2>
+          </div>
+          <p class="fade-up md:col-span-5 text-slate-600 text-sm">Measurable authority across every major generative engine.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="fade-up bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm space-y-4">
+            <h3 class="text-xl font-extrabold text-navy-900">Advanced Prompt Targeting</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">Capture high-intent buyer prompts before competitors appear in AI summaries.</p>
+            <a href="services.html" class="hover-arrow-link inline-flex items-center gap-2 text-xs font-bold text-brand-500">
+              Explore Service <span class="arrow-tilt">&rarr;</span>
+            </a>
+          </div>
+          <div class="fade-up bg-navy-900 text-white rounded-2xl p-7 shadow-xl space-y-3" data-delay="0.1">
+            <h3 class="text-lg font-bold">Citation-First Excellence</h3>
+            <p class="text-xs text-slate-300">Pages engineered for direct LLM retrieval.</p>
+            <p class="text-3xl font-extrabold text-brand-300 pt-2"><span class="count-up" data-target="750" data-suffix="+">750+</span></p>
+            <p class="text-[11px] text-slate-400">Websites &amp; Hubs Optimized</p>
+          </div>
+          <div class="fade-up bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm flex flex-col justify-between" data-delay="0.2">
+            <div class="space-y-2">
+              <div class="text-brand-500 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="text-2xl font-extrabold text-navy-900">4.9 / 5</p>
+              <p class="text-xs text-slate-500">Trusted By 250+ Growth Teams</p>
+            </div>
+            <p class="text-[11px] text-brand-500 font-semibold pt-4">Verified Client Reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ & Quick Contact -->
+      <div class="grid lg:grid-cols-12 gap-12 items-start pt-8 border-t border-slate-200">
+        <div class="lg:col-span-5 space-y-5">
+          <div class="shiny-glass reveal-image rounded-3xl overflow-hidden shadow-lg">
+            <img src="assets/client.jpg" alt="FAQ Consultation" class="w-full h-72 object-cover" />
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white rounded-2xl p-4 border border-slate-200/80 shadow-sm">
+              <p class="text-[11px] text-slate-400 font-semibold">Phone Number</p>
+              <p class="text-xs font-bold text-navy-900 mt-1">+1 (415) 890-4310</p>
+            </div>
+            <div class="bg-white rounded-2xl p-4 border border-slate-200/80 shadow-sm">
+              <p class="text-[11px] text-slate-400 font-semibold">Email Address</p>
+              <p class="text-xs font-bold text-navy-900 mt-1 truncate">searchmetricspro@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6">
+          <span class="fade-up inline-block text-xs font-bold uppercase tracking-[0.14em] text-brand-500">Frequently Asked Questions</span>
+          <h2 class="split-heading text-3xl font-extrabold text-navy-900 leading-tight">Common Questions About Our Services</h2>
+
+          <div class="space-y-3">
+            <div class="faq-item bg-white rounded-2xl border border-slate-200/80 p-5">
+              <button type="button" class="faq-trigger w-full flex items-center justify-between text-left text-sm font-bold text-navy-900">
+                <span>What is the difference between SEO, AEO, and GEO?</span>
+                <span class="faq-icon text-brand-500 text-lg leading-none">+</span>
+              </button>
+              <div class="faq-answer text-xs text-slate-600 leading-relaxed pt-2">
+                SEO targets traditional search links, AEO optimizes content for direct zero-click answers and featured snippets, and GEO (Generative Engine Optimization) ensures LLMs like ChatGPT, Perplexity, and Gemini cite your brand.
+              </div>
+            </div>
+
+            <div class="faq-item is-open bg-white rounded-2xl border border-brand-400/40 p-5 shadow-sm">
+              <button type="button" class="faq-trigger w-full flex items-center justify-between text-left text-sm font-bold text-navy-900">
+                <span>How quickly can we see AI citation improvements?</span>
+                <span class="faq-icon text-brand-500 text-lg leading-none">+</span>
+              </button>
+              <div class="faq-answer text-xs text-slate-600 leading-relaxed pt-2">
+                Most clients see measurable citation lift in Perplexity and Google AI Overviews within 30–45 days, with sustained multi-model share-of-voice growth across 90 days.
+              </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-2xl border border-slate-200/80 p-5">
+              <button type="button" class="faq-trigger w-full flex items-center justify-between text-left text-sm font-bold text-navy-900">
+                <span>Which AI platforms do you track and optimize for?</span>
+                <span class="faq-icon text-brand-500 text-lg leading-none">+</span>
+              </button>
+              <div class="faq-answer text-xs text-slate-600 leading-relaxed pt-2">
+                We track and optimize across ChatGPT Search, Perplexity AI, Google AI Overviews, Google Gemini, Anthropic Claude, and Microsoft Bing Copilot.
+              </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-2xl border border-slate-200/80 p-5">
+              <button type="button" class="faq-trigger w-full flex items-center justify-between text-left text-sm font-bold text-navy-900">
+                <span>Do you work alongside our existing SEO or content team?</span>
+                <span class="faq-icon text-brand-500 text-lg leading-none">+</span>
+              </button>
+              <div class="faq-answer text-xs text-slate-600 leading-relaxed pt-2">
+                Yes—we integrate seamlessly with your in-house team or handle end-to-end technical schema, content architecture, and digital PR co-citations.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-6">
+    <div class="bg-navy-900 border border-white/15 rounded-3xl max-w-2xl w-full p-6 space-y-4 text-white">
+      <div class="flex items-center justify-between">
+        <h3 class="text-base font-bold">SearchMetricsPro — AEO &amp; GEO Overview</h3>
+        <button id="close-video-modal" type="button" class="text-slate-400 hover:text-white text-xl leading-none">&times;</button>
+      </div>
+      <div class="aspect-video rounded-2xl bg-navy-800 flex flex-col items-center justify-center text-center p-6 space-y-3 border border-white/10">
+        <span class="w-14 h-14 rounded-full bg-brand-500/20 text-brand-300 flex items-center justify-center">
+          <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </span>
+        <p class="text-sm font-semibold">Agency Walkthrough Video</p>
+        <p class="text-xs text-slate-400 max-w-sm">Embed your agency showreel or Loom walkthrough here when moving to React.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       GLOBAL FOOTER
+  ========================================================== -->
+  <footer class="bg-navy-900 text-white pt-16 pb-8 overflow-hidden relative">
+    <div class="max-w-6xl mx-auto px-6 space-y-14">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="flex items-center gap-2.5">
+            <span class="w-9 h-9 rounded-full bg-brand-500 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            </span>
+            <span class="text-xl font-bold tracking-tight">SearchMetricsPro</span>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-xs">
+            The dedicated Answer Engine Optimization (AEO) &amp; Generative Engine Optimization (GEO) agency helping ambitious brands win AI search.
+          </p>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Quick Links</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+            <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Our Services</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li><a href="services.html" class="hover:text-white transition">Answer Engine Optimization</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Generative Engine Strategy</a></li>
+            <li><a href="services.html" class="hover:text-white transition">AI Citation Analytics</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Entity &amp; Schema Markup</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Digital PR Co-Citations</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Subscribe Newsletter</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Weekly AEO &amp; GEO playbooks, citation benchmarks, and LLM updates.</p>
+          <form class="flex items-center bg-navy-800 border border-white/10 rounded-xl p-1.5">
+            <input type="email" placeholder="Your email address" class="bg-transparent text-xs text-white placeholder-slate-400 px-3 py-1.5 w-full focus:outline-none" />
+            <button type="button" class="w-8 h-8 rounded-lg bg-brand-500 hover:bg-brand-400 text-white flex items-center justify-center shrink-0 transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="relative py-8 flex items-center justify-center select-none">
+        <span class="text-3xl sm:text-5xl lg:text-[5.2rem] font-extrabold tracking-tight text-white/[0.04] leading-none">SEARCHMETRICSPRO</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-24 h-24 rounded-full bg-brand-500 text-white shadow-2xl shadow-brand-500/40 flex items-center justify-center border-4 border-navy-900 relative">
+            <svg viewBox="0 0 120 120" class="w-20 h-20 rotate-badge-ring">
+              <defs><path id="footerCirclePath" d="M 60, 60 m -42, 0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0" /></defs>
+              <text fill="#FFFFFF" font-size="9.5" font-weight="700" letter-spacing="2.2">
+                <textPath href="#footerCirclePath">AEO &amp; GEO AGENCY &bull; 10+ YRS EXP &bull;</textPath>
+              </text>
+            </svg>
+            <span class="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; 2026 SearchMetricsPro AEO &amp; GEO Agency. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-white transition">LinkedIn</a>
+          <a href="#" class="hover:text-white transition">X / Twitter</a>
+          <a href="#" class="hover:text-white transition">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

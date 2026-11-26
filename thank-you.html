@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — SearchMetricsPro AEO &amp; GEO Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'] },
+          colors: {
+            navy: { 950: '#0D0F1C', 900: '#111322', 850: '#171A2E', 800: '#1D2136', 700: '#272C47' },
+            brand: { 500: '#7C3AED', 400: '#8B5CF6', 300: '#A78BFA' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased">
+  <div id="magic-cursor"><div id="ball"></div></div>
+
+  <!-- =========================================================
+       HEADER + THANK YOU HERO
+  ========================================================== -->
+  <header class="relative bg-navy-900 text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="assets/hero.jpg" alt="SearchMetricsPro" class="w-full h-full object-cover opacity-25" />
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0D0F1C]/90 via-[#111322]/90 to-[#111322]"></div>
+    </div>
+
+    <div class="relative z-10 border-b border-white/10 text-xs text-slate-300">
+      <div class="max-w-6xl mx-auto px-6 py-2.5 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-6">
+          <span class="inline-flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-brand-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            searchmetricspro@gmail.com
+          </span>
+          <span class="inline-flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-brand-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +1 (415) 890-4310
+          </span>
+        </div>
+        <div class="flex items-center gap-5 text-slate-300">
+          <span>San Francisco &bull; Global AI Search</span>
+          <span class="text-brand-300 font-medium">AEO &amp; GEO Certified</span>
+        </div>
+      </div>
+    </div>
+
+    <nav id="main-nav" class="relative z-20">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2.5 magnetic-item">
+          <span class="w-9 h-9 rounded-full bg-brand-500 flex items-center justify-center shadow-lg shadow-brand-500/40">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          </span>
+          <span class="text-xl font-bold tracking-tight">SearchMetricsPro</span>
+        </a>
+
+        <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+          <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+        </ul>
+
+        <a href="index.html" class="pill-cta magnetic-item">
+          <span class="btn-bg-ripple"></span>
+          <span class="btn-label">Back to Home</span>
+          <span class="arrow-circle">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Thank You Card -->
+    <div class="relative z-10 max-w-3xl mx-auto px-6 py-24 text-center space-y-7">
+      <div class="fade-up w-20 h-20 rounded-full bg-brand-500/20 border-2 border-brand-400 text-brand-300 mx-auto flex items-center justify-center shadow-2xl shadow-brand-500/30">
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+
+      <span class="fade-up inline-block text-xs font-bold uppercase tracking-[0.16em] text-brand-300">
+        Inquiry Confirmed
+      </span>
+
+      <h1 class="split-heading text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+        Thank You! Your Inquiry Has Been Submitted
+      </h1>
+
+      <p class="fade-up text-slate-300 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+        We&rsquo;ve received your details and an AEO &amp; GEO strategist from SearchMetricsPro will review your website and get back to you within 1 business day.
+      </p>
+
+      <div class="fade-up flex flex-wrap items-center justify-center gap-4 pt-4">
+        <a href="index.html" class="pill-cta magnetic-item">
+          <span class="btn-bg-ripple"></span>
+          <span class="btn-label">Return to Homepage</span>
+          <span class="arrow-circle">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+        <a href="services.html" class="inline-flex items-center gap-2 text-xs font-semibold text-slate-200 hover:text-white border border-white/15 rounded-full px-5 py-3 transition">
+          Explore AEO &amp; GEO Services &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       GLOBAL FOOTER
+  ========================================================== -->
+  <footer class="bg-navy-900 text-white pt-16 pb-8 overflow-hidden relative border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-6 space-y-14">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="flex items-center gap-2.5">
+            <span class="w-9 h-9 rounded-full bg-brand-500 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            </span>
+            <span class="text-xl font-bold tracking-tight">SearchMetricsPro</span>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-xs">
+            The dedicated Answer Engine Optimization (AEO) &amp; Generative Engine Optimization (GEO) agency helping ambitious brands win AI search.
+          </p>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Quick Links</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+            <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Our Services</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li><a href="services.html" class="hover:text-white transition">Answer Engine Optimization</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Generative Engine Strategy</a></li>
+            <li><a href="services.html" class="hover:text-white transition">AI Citation Analytics</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Entity &amp; Schema Markup</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Digital PR Co-Citations</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Subscribe Newsletter</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Weekly AEO &amp; GEO playbooks, citation benchmarks, and LLM updates.</p>
+          <form class="flex items-center bg-navy-800 border border-white/10 rounded-xl p-1.5">
+            <input type="email" placeholder="Your email address" class="bg-transparent text-xs text-white placeholder-slate-400 px-3 py-1.5 w-full focus:outline-none" />
+            <button type="button" class="w-8 h-8 rounded-lg bg-brand-500 hover:bg-brand-400 text-white flex items-center justify-center shrink-0 transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; 2026 SearchMetricsPro AEO &amp; GEO Agency. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-white transition">LinkedIn</a>
+          <a href="#" class="hover:text-white transition">X / Twitter</a>
+          <a href="#" class="hover:text-white transition">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
