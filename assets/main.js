@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // 0. Self-Referencing Canonical Tag
+  const canonicalEl = document.getElementById("canonical-link") || document.querySelector('link[rel="canonical"]');
+  if (canonicalEl && window.location.origin && window.location.origin !== "null") {
+    const isBlogPost = window.location.pathname.endsWith("blog-post.html");
+    const slugQuery = isBlogPost ? window.location.search : "";
+    canonicalEl.setAttribute("href", window.location.origin + window.location.pathname + slugQuery);
+  }
+
   // 1. Lenis Smooth Scroll
   let lenis = null;
   if (typeof Lenis !== "undefined") {
@@ -244,12 +252,20 @@ document.addEventListener("DOMContentLoaded", () => {
       if (submitBtn) submitBtn.disabled = true;
 
       const formData = new FormData(contactForm);
+      const payload = Object.fromEntries(formData.entries());
       try {
-        await fetch("https://formsubmit.co/ajax/searchmetricspro@gmail.com", {
+        const res = await fetch("https://formsubmit.co/ajax/searchmetricspro@gmail.com", {
           method: "POST",
-          headers: { Accept: "application/json" },
-          body: formData,
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(payload),
         });
+        const data = await res.json().catch(() => ({}));
+        if (data && data.success === "false") {
+          console.warn("FormSubmit notice:", data.message);
+        }
       } catch (_err) {
         // Proceed with confirmation & redirect even if offline/blocked locally
       }
